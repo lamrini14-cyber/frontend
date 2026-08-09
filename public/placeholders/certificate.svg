@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#FFFBF7" rx="20" stroke="#E8E0D8" stroke-width="2"/>
+  <text x="200" y="80" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#1B4332"><�</text>
+  <text x="200" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#1B4332">GMP Certified</text>
+  <text x="200" y="170" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#6B6B6B">Good Manufacturing Practices</text>
+  <text x="200" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#C4652E">SUNU YARAMA</text>
+</svg>

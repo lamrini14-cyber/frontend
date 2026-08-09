@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "collection": "Collection",
+    "about": "Ci nun",
+    "contact": "Jokkoo"
+  },
+  "trust": {
+    "cod": "COD",
+    "delivery": "Yónnee 48h Dakar",
+    "stars": "★ 4.9/5"
+  },
+  "home": {
+    "hero_headline": "Sunu yaram mooy sa kalaite.",
+    "hero_subhead": "Ñetti cure. Ñetti problem. Fay ci jënd bi.",
+    "hero_cta": "Xool collection bi",
+    "problems_title": "Danga xam ñi?",
+    "offer_banner_title": "Cure bu dëgg. Prix bu weex.",
+    "how_title": "Naka lañu def",
+    "how_1": "Tann sa cure",
+    "how_2": "Yëgël ak COD",
+    "how_3": "Ñël sa ritual",
+    "testimonials_title": "Ñu wax Dakar",
+    "faq_title": "Laaj yu dëkk",
+    "final_cta": "Yëgël léegi"
+  },
+  "collection": {
+    "title": "Tann sa cure",
+    "ritual_cta": "Programme bu mat — 3 boîtes · 1 400 FCFA",
+    "from_price": "Ci 540 FCFA"
+  },
+  "product": {
+    "reviews": "xam-xam",
+    "offer_1_badge": "Cure Initiale",
+    "offer_1_label": "1 boîte",
+    "offer_2_badge": "Cure Recommandée",
+    "offer_2_label": "2 boîtes",
+    "offer_3_badge": "Programme Intensif",
+    "offer_3_label": "3 boîtes",
+    "add_cta": "Dëgël sama cure",
+    "trust_cod": "Fay ci jënd bi rekk",
+    "trust_gmp": "GMP",
+    "trust_delivery": "Yónnee 48h",
+    "ingredients_title": "Ingrédients yi",
+    "how_to_use": "Naka lañ ko jëfandikoo",
+    "how_to_use_desc": "Gummy 1 bu bés, ci suba. 30 fan ngir xool résultats yi.",
+    "testimonials_title": "Ñu wax",
+    "faq_title": "Laaj yi",
+    "cross_sells_title": "Yokk ci sa ritual"
+  },
+  "cart": {
+    "title": "Sa panier",
+    "empty": "Panier bi da fey.",
+    "checkout_cta": "Dëgël programme bi · Fay ci jënd",
+    "trust_cod": "Fay ci jënd bi rekk",
+    "trust_delivery": "92% yónnee",
+    "trust_stock": "Stock yomb — déglu tey",
+    "tier_hint_1_to_2": "Yokk 1 boîte bu dëkk → 950 FCFA rekk",
+    "tier_hint_2_to_3": "Yokk 1 boîte bu dëkk → 1 400 FCFA rekk",
+    "cross_sells_title": "Yokk ci sa ritual",
+    "add_cross_sell": "Yokk",
+    "remove": "Dór",
+    "total": "Xaalis",
+    "saved": "Musal",
+    "added": "Ajout na ✓"
+  },
+  "checkout": {
+    "title": "Dëgël sa yëgël",
+    "order_summary": "Yëgël bi",
+    "reservation": "Yëgël bi dafa séy 10 minit",
+    "name_label": "Tur bu dëkk",
+    "name_placeholder": "Ex: Fatou Diop",
+    "phone_label": "Telefon",
+    "phone_placeholder": "Ex: 0771234567",
+    "phone_helper": "Noma Sénégal bu tànn ak 0",
+    "terms_label": "Dangay dëgg yëgël yi",
+    "submit_cta": "Dëgël yëgël COD",
+    "fine_print": "Dinañu la woo ci 2 waxtu ngir dëgël sa adresse Dakar",
+    "error_name": "Tur bi dafa bëgg",
+    "error_phone": "Noma bees. Format: 07XXXXXXXX",
+    "error_terms": "Danga dëgg conditions yi",
+    "error_geo": "Yëgël yi am na fi ci Sénégal rekk.",
+    "error_vpn": "Jokkoo bi dëggulwoon. Dor VPN bi te jëleel.",
+    "error_rate": "Yëgël yu bari ak telefon bii. Jëleel bés bu dëkk.",
+    "error_server": "Bug. Jëleel."
+  },
+  "upsell": {
+    "title": "Offre — dëkk ci it",
+    "hook": "Jëfandikoo offre bi ñaar",
+    "price": "540 FCFA",
+    "accept_cta": "Waaw, yokk 540 FCFA",
+    "decline": "Déedéet",
+    "timer_label": "Offre bi séy ci"
+  },
+  "merci": {
+    "title": "Yëgël bi dëgël na !",
+    "order_id": "Yëgël",
+    "steps_title": "Li tey",
+    "step_1": "Dinañu la woo ci 2 waxtu ngir dëgël sa adresse",
+    "step_2": "Yónnee Dakar 24–48h",
+    "step_3": "Fay ci jënd bi",
+    "stats_delivery": "92% yónnee",
+    "stats_stars": "★ 4.9/5",
+    "stats_city": "Dakar",
+    "cross_sells_title": "Yokk ci sa ritual",
+    "total_paid": "Xaalis ci jënd bi"
+  },
+  "about": {
+    "hero": "SUNU YARAMA — our body",
+    "story_title": "Ginnaaw bi",
+    "story": "Dañu def SUNU YARAMA ndax Sénégal bëgg na marque bu dëgg — moo gëm krème miracle wala complément bu xam-xam.",
+    "mission_title": "Sa mission bi",
+    "mission": "Ñetti problem. Ñetti solution. Ritual bu yomb.",
+    "quality_title": "Qualité",
+    "quality": "Ingrédients GMP, doses bu dëgg, fillers yënëng.",
+    "cta": "Xool collection bi"
+  },
+  "contact": {
+    "title": "Jokkoo",
+    "address": "Dakar, Sénégal",
+    "email": "contact@sunuyaram.shop",
+    "hours": "Tén–Lema · 9h–19h",
+    "form_name": "Tur",
+    "form_phone": "Telefon",
+    "form_message": "Limu",
+    "form_submit": "Yónn",
+    "form_success": "Message yi dégël na. Dinañu la respond ci 24h."
+  },
+  "legal": {
+    "livraison": {
+      "title": "Politique de livraison",
+      "content": "Yónnee COD Dakar ci 24–48h ba ñu dëgël telefon. Yónnee bu jarr."
+    },
+    "retours": {
+      "title": "Retours et remboursements",
+      "content": "Rende gën ci 7 fan. Contact: contact@sunuyaram.shop."
+    },
+    "confidentialite": {
+      "title": "Politique de confidentialité",
+      "content": "Dañu mël tur ak telefon rekk ngir yónnee. Données yi rendi ko ak yeneen."
+    },
+    "conditions": {
+      "title": "Conditions générales de vente",
+      "content": "Yëgël Sénégal rekk. COD. Prix FCFA."
+    },
+    "mentions-legales": {
+      "title": "Mentions légales",
+      "content": "SUNU YARAMA · sunuyaram.shop · Dakar · contact@sunuyaram.shop"
+    }
+  },
+  "products_data": {
+    "nuit-calm": {
+      "name": "NuitCalm",
+      "wo_subtitle": "Sopi — ngëm ci guddi gi",
+      "headline": "Xel bi dafa gewu ci guddi.",
+      "pain_1": "Xel bu séddu ba ci su dégg",
+      "pain_2": "Dëkke ci suba moom dafa feebar",
+      "pain_3": "Xam-xam bu bari dëkk",
+      "solution_title": "Ritual guddi",
+      "solution_desc": "Gummy 1 NuitCalm 30 minit ñaar ngir dëkke. Ashwagandha ngir def cortisol, Mélatonine ngir rythme bi, Magnésium ngir xam-xam.",
+      "ingredients": [
+        {"name": "Ashwagandha KSM-66®", "dose": "300mg", "benefit": "Reduce cortisol"},
+        {"name": "Mélatonine", "dose": "1mg", "benefit": "Rythme circadien"},
+        {"name": "Magnésium", "dose": "100mg", "benefit": "Repos bu dëgg"}
+      ],
+      "faq": [
+        {"q": "Dinaa dépendant?", "a": "Déedéet. Mélatonine 1mg du dépendant."},
+        {"q": "Kanam nañu effect yi?", "a": "Kiliyan yi wax 1 ayubès."},
+        {"q": "Naka ak médicaments?", "a": "Joxe doktoor bi."}
+      ]
+    },
+    "energie-vit": {
+      "name": "ÉnergieVit",
+      "wo_subtitle": "Kalaite — yaram bu fees",
+      "headline": "Damayy foog— xel bi dafa gewu.",
+      "pain_1": "Foog bu dëkk malgré dëkke bu baax",
+      "pain_2": "Xel bu koos",
+      "pain_3": "Moroom bu bari",
+      "solution_title": "Ritual suba",
+      "solution_desc": "Gummy 1 ÉnergieVit ci suba. D3 ngir énergie, B12 + B6, Ginseng ngir xel.",
+      "ingredients": [
+        {"name": "Vitamine D3", "dose": "1000 UI", "benefit": "Énergie"},
+        {"name": "Vitamine B12", "dose": "500mcg", "benefit": "Métabolisme"},
+        {"name": "Ginseng", "dose": "200mg", "benefit": "Xel bi"}
+      ],
+      "faq": [
+        {"q": "Médicament la?", "a": "Déedéet — complément alimentaire la."},
+        {"q": "Ki moomeel?", "a": "Ki am foog bu dëkk, étudiant, travailleur."},
+        {"q": "Soir?", "a": "Suba la jëm gëna baax."}
+      ]
+    },
+    "confort-digest": {
+      "name": "ConfortDigest",
+      "wo_subtitle": "Gox — goxu bu yomb",
+      "headline": "Goxu bi dafa suuf ba ca thiéb.",
+      "pain_1": "Ballonnements ci kàraan yi",
+      "pain_2": "Défaalt ci aduna",
+      "pain_3": "Transit bu setlu",
+      "solution_title": "Ritual ci dëkk",
+      "solution_desc": "Gummy 1 ConfortDigest ba ñu neekk ndépp. ACV, Gingembre, Probiotiques.",
+      "ingredients": [
+        {"name": "Vinaigre de cidre", "dose": "500mg", "benefit": "Enzymes digestives"},
+        {"name": "Gingembre", "dose": "250mg", "benefit": "Anti-inflammatoire"},
+        {"name": "Probiotiques", "dose": "1B UFC", "benefit": "Flore intestinale"}
+      ],
+      "faq": [
+        {"q": "Kanam nañu ko jël?", "a": "Ba ñu neekk kàraan wu dëkk."},
+        {"q": "Defa naan ñaari dëkk?", "a": "2-4 ayubès."}
+      ]
+    }
+  }
+}

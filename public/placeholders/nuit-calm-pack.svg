@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B4332"/>
+      <stop offset="100%" style="stop-color:#2D6A4F"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g)" rx="40"/>
+  <text x="300" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="80" fill="white" opacity="0.9"><</text>
+  <text x="300" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="white">NuitCalm</text>
+  <text x="300" y="390" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#86efac">Ashwagandha � M�latonine � Mg</text>
+  <text x="300" y="450" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#86efac" opacity="0.8">Sopi  ng�m ci guddi gi</text>
+</svg>
