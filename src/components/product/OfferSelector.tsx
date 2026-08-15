@@ -41,7 +41,9 @@ export default function OfferSelector({ product }: Props) {
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-3 gap-2">
-        {OFFERS.map(({ count, badge, label, popular }) => {
+        {OFFERS.map((offer) => {
+          const { count, badge, label } = offer;
+          const popular = "popular" in offer && offer.popular;
           const price = TIER_PRICES[count];
           const saved = savedAmount(count);
           const isSelected = selected === count;
