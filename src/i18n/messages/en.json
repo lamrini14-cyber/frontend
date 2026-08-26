@@ -1,0 +1,212 @@
+{
+  "nav": {
+    "collection": "Collection",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "trust": {
+    "cod": "COD",
+    "delivery": "48h Delivery Dakar",
+    "stars": "★ 4.9/5"
+  },
+  "home": {
+    "hero_headline": "Your body deserves an honest ritual.",
+    "hero_subhead": "Three cures. Three problems solved. Cash on delivery.",
+    "hero_cta": "Discover the collection",
+    "problems_title": "Do you recognize these moments?",
+    "offer_banner_title": "An effective cure. An honest price.",
+    "how_title": "How it works",
+    "how_1": "Choose your cure",
+    "how_2": "Order with COD",
+    "how_3": "Enjoy the ritual",
+    "testimonials_title": "What our Dakar customers say",
+    "faq_title": "Frequently asked questions",
+    "final_cta": "Order now"
+  },
+  "collection": {
+    "title": "Choose your cure",
+    "ritual_cta": "Full Program — 3 boxes · 1,400 FCFA",
+    "from_price": "From 540 FCFA"
+  },
+  "product": {
+    "reviews": "reviews",
+    "offer_1_badge": "Starter Cure",
+    "offer_1_label": "1 box",
+    "offer_2_badge": "Recommended Cure",
+    "offer_2_label": "2 boxes",
+    "offer_3_badge": "Intensive Program",
+    "offer_3_label": "3 boxes",
+    "add_cta": "Start my cure",
+    "trust_cod": "Cash on delivery",
+    "trust_gmp": "GMP Certified",
+    "trust_delivery": "48h Delivery",
+    "ingredients_title": "Ingredients",
+    "how_to_use": "How to use",
+    "how_to_use_desc": "1 gummy per day. Follow a full 30-day cure for lasting results.",
+    "testimonials_title": "Testimonials",
+    "faq_title": "FAQ",
+    "cross_sells_title": "Complete your ritual"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "checkout_cta": "Confirm my program · Cash on delivery",
+    "trust_cod": "Pay only on receipt",
+    "trust_delivery": "92% orders delivered",
+    "trust_stock": "Limited stock — shipping today",
+    "tier_hint_1_to_2": "Add 1 more box → only 950 FCFA",
+    "tier_hint_2_to_3": "Add 1 more box → only 1,400 FCFA",
+    "cross_sells_title": "Complete your ritual",
+    "add_cross_sell": "Add",
+    "remove": "Remove",
+    "total": "Total",
+    "saved": "Saved",
+    "added": "Added ✓"
+  },
+  "checkout": {
+    "title": "Confirm my order",
+    "order_summary": "Order summary",
+    "reservation": "Your order is reserved for 10 minutes",
+    "name_label": "Full name",
+    "name_placeholder": "e.g. Fatou Diop",
+    "phone_label": "Phone",
+    "phone_placeholder": "e.g. 0771234567",
+    "phone_helper": "Senegal number starting with 0",
+    "terms_label": "I accept the terms of sale",
+    "submit_cta": "Confirm my COD order",
+    "fine_print": "We'll call within 2h to confirm your Dakar address",
+    "error_name": "Full name required",
+    "error_phone": "Invalid number. Format: 07XXXXXXXX",
+    "error_terms": "You must accept the terms",
+    "error_geo": "Orders available in Senegal only.",
+    "error_vpn": "Unauthorized connection. Disable VPN and try again.",
+    "error_rate": "Too many orders with this number. Try again tomorrow.",
+    "error_server": "Internal error. Please try again."
+  },
+  "upsell": {
+    "title": "Exclusive offer — one time only",
+    "hook": "Take advantage of this offer before finalizing",
+    "price": "540 FCFA",
+    "accept_cta": "Yes, add for 540 FCFA",
+    "decline": "No thanks",
+    "timer_label": "Offer expires in"
+  },
+  "merci": {
+    "title": "Order confirmed!",
+    "order_id": "Order",
+    "steps_title": "Next steps",
+    "step_1": "We'll call within 2h to confirm your address",
+    "step_2": "Delivery in Dakar within 24–48h",
+    "step_3": "Pay on receipt",
+    "stats_delivery": "92% delivered",
+    "stats_stars": "★ 4.9/5",
+    "stats_city": "Dakar",
+    "cross_sells_title": "Complete your ritual",
+    "total_paid": "Total to pay on delivery"
+  },
+  "about": {
+    "hero": "SUNU YARAMA — our body",
+    "story_title": "Our story",
+    "story": "We created SUNU YARAMA because Senegal deserved an honest gummy brand — not a miracle cream, not a supplement imported without transparency.",
+    "mission_title": "Our mission",
+    "mission": "Three daily problems. Three scientific solutions. An accessible ritual.",
+    "quality_title": "Quality",
+    "quality": "GMP certified ingredients, effective doses, zero unnecessary fillers.",
+    "cta": "Discover the collection"
+  },
+  "contact": {
+    "title": "Contact",
+    "address": "Dakar, Senegal",
+    "email": "contact@sunuyaram.shop",
+    "hours": "Mon–Sat · 9am–7pm",
+    "form_name": "Name",
+    "form_phone": "Phone",
+    "form_message": "Message",
+    "form_submit": "Send",
+    "form_success": "Message sent. We'll reply within 24h."
+  },
+  "legal": {
+    "livraison": {
+      "title": "Delivery policy",
+      "content": "COD delivery in Dakar within 24–48h after phone confirmation. Free delivery. Payment only on receipt."
+    },
+    "retours": {
+      "title": "Returns and refunds",
+      "content": "Returns accepted within 7 days if product is unopened. Contact us at contact@sunuyaram.shop."
+    },
+    "confidentialite": {
+      "title": "Privacy policy",
+      "content": "We only collect data necessary for delivery (name, phone). No data sold to third parties."
+    },
+    "conditions": {
+      "title": "Terms of sale",
+      "content": "Sales in Senegal only. COD payment. Prices in FCFA. Orders subject to phone validation."
+    },
+    "mentions-legales": {
+      "title": "Legal notice",
+      "content": "SUNU YARAMA · sunuyaram.shop · Dakar, Senegal · contact: contact@sunuyaram.shop"
+    }
+  },
+  "products_data": {
+    "nuit-calm": {
+      "name": "NuitCalm",
+      "wo_subtitle": "Sopi — trust the night",
+      "headline": "When your mind won't stop racing.",
+      "pain_1": "Restless mind until midnight",
+      "pain_2": "Waking up tired despite 8h of sleep",
+      "pain_3": "Irritability and lack of focus the next day",
+      "solution_title": "The evening ritual",
+      "solution_desc": "1 NuitCalm gummy 30 minutes before bed. Ashwagandha KSM-66® to calm cortisol, Melatonin to sync your rhythm, Magnesium to relax muscles.",
+      "ingredients": [
+        {"name": "Ashwagandha KSM-66®", "dose": "300mg", "benefit": "Reduces cortisol and stress"},
+        {"name": "Melatonin", "dose": "1mg", "benefit": "Syncs circadian rhythm"},
+        {"name": "Magnesium bisglycinate", "dose": "100mg", "benefit": "Muscle and nerve relaxation"}
+      ],
+      "faq": [
+        {"q": "Will I become dependent?", "a": "No. Low-dose melatonin (1mg) is non-addictive and non-sedative."},
+        {"q": "When will I see the first effects?", "a": "Most customers report improvement within the first week."},
+        {"q": "Can I take it with medications?", "a": "Consult your doctor if you take prescription medications."}
+      ]
+    },
+    "energie-vit": {
+      "name": "EnergieVit",
+      "wo_subtitle": "Kalaite — a refreshed body",
+      "headline": "Tired even with the sun shining.",
+      "pain_1": "Persistent fatigue despite a decent night's sleep",
+      "pain_2": "Brain fog, difficulty concentrating",
+      "pain_3": "Energy drop in the middle of the day",
+      "solution_title": "The morning ritual",
+      "solution_desc": "1 EnergieVit gummy every morning. Vitamin D3 to compensate for deficiency common in urban Africa, B12 + B6 for cellular energy production, Ginseng for mental clarity.",
+      "ingredients": [
+        {"name": "Vitamin D3", "dose": "1000 IU", "benefit": "Energy and immunity, common Dakar deficiency"},
+        {"name": "Vitamin B12", "dose": "500mcg", "benefit": "Metabolism and energy production"},
+        {"name": "Panax Ginseng", "dose": "200mg", "benefit": "Mental clarity and endurance"}
+      ],
+      "faq": [
+        {"q": "Is it like a medication?", "a": "No — it's a dietary supplement. It contributes to normal energy levels, without artificial stimulant effects."},
+        {"q": "Who is it made for?", "a": "For anyone experiencing chronic fatigue, students, workers, with no identified medical reason."},
+        {"q": "Can I take it in the evening?", "a": "We recommend mornings to benefit from the effect all day."}
+      ]
+    },
+    "confort-digest": {
+      "name": "ComfortDigest",
+      "wo_subtitle": "Gox — easy digestion",
+      "headline": "Heavy stomach after thiéb.",
+      "pain_1": "Bloating after rich meals",
+      "pain_2": "Digestive discomfort in public",
+      "pain_3": "Slow transit and abdominal heaviness",
+      "solution_title": "The after-meal ritual",
+      "solution_desc": "1 ComfortDigest gummy after your main meal. Apple cider vinegar to stimulate digestion, Ginger as anti-inflammatory, Probiotics to balance gut flora.",
+      "ingredients": [
+        {"name": "Apple cider vinegar", "dose": "500mg", "benefit": "Stimulates digestive enzymes"},
+        {"name": "Ginger", "dose": "250mg", "benefit": "Anti-nausea and digestive anti-inflammatory"},
+        {"name": "Probiotics", "dose": "1 billion CFU", "benefit": "Gut flora balance"}
+      ],
+      "faq": [
+        {"q": "When should I take it?", "a": "After your richest meal of the day."},
+        {"q": "Does it cure digestive diseases?", "a": "No. ComfortDigest supports digestive comfort. For any condition, consult a doctor."},
+        {"q": "How long before seeing results?", "a": "Generally 2–4 weeks of regular use."}
+      ]
+    }
+  }
+}

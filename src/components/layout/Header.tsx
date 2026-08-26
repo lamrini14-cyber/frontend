@@ -2,22 +2,42 @@
 
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { ShoppingBag, Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { ShoppingBag, Menu, X, Globe } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
 import { useCartStore } from "@/lib/cart-store";
-import { cn } from "@/lib/utils";
+import { routing, localeLabels } from "@/i18n/routing";
 
 export default function Header({ locale }: { locale: string }) {
   const t = useTranslations("nav");
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { uniqueCount, openDrawer } = useCartStore();
-  
+  const langRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const count = mounted ? uniqueCount() : 0;
+
+  function switchLocalePath(newLocale: string) {
+    const segments = pathname.split("/");
+    segments[1] = newLocale;
+    return segments.join("/") || `/${newLocale}`;
+  }
 
   const navLinks = [
     { href: `/${locale}/collection`, label: t("collection") },
@@ -65,11 +85,39 @@ export default function Header({ locale }: { locale: string }) {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
+          <div ref={langRef} className="relative">
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className="flex items-center gap-1 px-2 py-1.5 rounded-lg hover:bg-[#E8E0D8] transition-colors text-sm font-medium text-[#1A1A1A]"
+              aria-label="Change language"
+            >
+              <Globe size={16} />
+              <span className="uppercase">{localeLabels[locale] ?? locale}</span>
+            </button>
+
+            {langOpen && (
+              <div className="absolute right-0 top-full mt-1 bg-white border border-[#E8E0D8] rounded-lg shadow-lg overflow-hidden z-50 min-w-[100px]">
+                {routing.locales.map((loc) => (
+                  <Link
+                    key={loc}
+                    href={switchLocalePath(loc)}
+                    onClick={() => setLangOpen(false)}
+                    className={`block px-4 py-2 text-sm hover:bg-[#F5EDE4] transition-colors ${
+                      loc === locale ? "font-bold text-[#C4652E]" : "text-[#1A1A1A]"
+                    }`}
+                  >
+                    {localeLabels[loc]}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           <button
             onClick={openDrawer}
             className="relative p-2 rounded-lg hover:bg-[#E8E0D8] transition-colors"
-            aria-label={`Panier (${count} articles)`}
+            aria-label={`Cart (${count})`}
           >
             <ShoppingBag size={22} className="text-[#1A1A1A]" />
             {count > 0 && (
