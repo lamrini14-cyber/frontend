@@ -56,13 +56,22 @@ export default async function PDPPage({
                 </div>
               </div>
               <div className="grid grid-cols-3 gap-3">
-                {["Ingrédients", "Mode d'emploi", "Certification"].map((label, i) => (
+                {[
+                  { label: "Ingrédients", items: ingredients.map((i) => i.name) },
+                  { label: "Mode d'emploi", items: ["1 gummy / jour", "Cure 30 jours", "Résultats durables"] },
+                  { label: "Certification", items: ["GMP Certifié", "Études PubMed", "Zéro fillers"] },
+                ].map((card, i) => (
                   <div
                     key={i}
-                    className="aspect-square rounded-2xl flex items-center justify-center text-white text-xs text-center font-medium p-2"
-                    style={{ background: `linear-gradient(135deg, ${product.gradientFrom}aa, ${product.gradientTo}aa)` }}
+                    className="aspect-square rounded-2xl flex flex-col items-center justify-center text-white text-center p-3 gap-2"
+                    style={{ background: `linear-gradient(135deg, ${product.gradientFrom}cc, ${product.gradientTo}cc)` }}
                   >
-                    {label}
+                    <span className="text-xs font-bold uppercase tracking-wide border-b border-white/30 pb-1 w-full">{card.label}</span>
+                    <ul className="text-[10px] leading-relaxed opacity-90 space-y-0.5">
+                      {card.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
                   </div>
                 ))}
               </div>

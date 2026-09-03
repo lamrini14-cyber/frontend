@@ -11,7 +11,9 @@ export interface FaqItem {
 
 export interface Product {
   slug: "nuit-calm" | "energie-vit" | "confort-digest";
+  sku: string;
   name: string;
+  nameFr: string;
   woSubtitle: string;
   headline: string;
   color: string;
@@ -22,7 +24,9 @@ export interface Product {
 export const PRODUCTS: Product[] = [
   {
     slug: "nuit-calm",
+    sku: "SY-NC-001",
     name: "NuitCalm",
+    nameFr: "NuitCalm — Sommeil & Sérénité",
     woSubtitle: "Sopi — ngëm ci guddi gi",
     headline: "Quand ta tête refuse de s'arrêter.",
     color: "#1B4332",
@@ -31,7 +35,9 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "energie-vit",
+    sku: "SY-EV-002",
     name: "ÉnergieVit",
+    nameFr: "ÉnergieVit — Énergie & Vitalité",
     woSubtitle: "Kalaite — yaram bu fees",
     headline: "Fatigué(e) même avec le soleil.",
     color: "#C4652E",
@@ -40,7 +46,9 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: "confort-digest",
+    sku: "SY-CD-003",
     name: "ConfortDigest",
+    nameFr: "ConfortDigest — Confort Digestif",
     woSubtitle: "Gox — goxu bu yomb",
     headline: "Ventre lourd après le thiéb.",
     color: "#7B4D2E",
