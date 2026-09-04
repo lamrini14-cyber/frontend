@@ -36,7 +36,7 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
               <span className="text-green-400 line-through text-sm">3 × 23 000 FCFA</span>
               <span className="text-3xl font-bold text-[#E8B84A]">56 800 FCFA</span>
               <span className="bg-[#E8B84A] text-[#1A1A1A] text-xs font-bold px-2 py-1 rounded-full">
-                -220 FCFA
+                -12 200 FCFA
               </span>
             </div>
             <RitualButton locale={locale} label={t("ritual_cta")} />
