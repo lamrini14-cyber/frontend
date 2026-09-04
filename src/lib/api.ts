@@ -71,9 +71,9 @@ function mockSuccess(payload: CreateOrderPayload): OrderResponse {
   const suffix = Math.random().toString(36).substring(2, 6).toUpperCase();
   const orderNum = `SUNUYARAMA-${dateStr}-${suffix}`;
   const uniqueSlugs = [...new Set(payload.items.map((i) => i.slug))];
-  const tierPrices: Record<number, number> = { 1: 540, 2: 950, 3: 1400 };
-  const base = tierPrices[uniqueSlugs.length] ?? 540;
-  const total = base + (payload.upsell_accepted ? 540 : 0);
+  const tierPrices: Record<number, number> = { 1: 23000, 2: 43000, 3: 56800 };
+  const base = tierPrices[uniqueSlugs.length] ?? 23000;
+  const total = base + (payload.upsell_accepted ? 23000 : 0);
   return {
     order_id: orderNum,
     order_number: orderNum,

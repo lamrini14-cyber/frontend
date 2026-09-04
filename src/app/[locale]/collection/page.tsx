@@ -33,8 +33,8 @@ export default async function CollectionPage({ params }: { params: Promise<{ loc
             </h2>
             <p className="text-green-200 mb-4 text-sm">NuitCalm + ÉnergieVit + ConfortDigest</p>
             <div className="flex items-center justify-center gap-4 mb-6">
-              <span className="text-green-400 line-through text-sm">3 × 540 FCFA</span>
-              <span className="text-3xl font-bold text-[#E8B84A]">1 400 FCFA</span>
+              <span className="text-green-400 line-through text-sm">3 × 23 000 FCFA</span>
+              <span className="text-3xl font-bold text-[#E8B84A]">56 800 FCFA</span>
               <span className="bg-[#E8B84A] text-[#1A1A1A] text-xs font-bold px-2 py-1 rounded-full">
                 -220 FCFA
               </span>

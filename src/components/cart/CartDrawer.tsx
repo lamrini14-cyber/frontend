@@ -70,7 +70,7 @@ export default function CartDrawer({ locale }: { locale: string }) {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="font-semibold text-sm truncate">{item.name}</div>
-                      <div className="text-[#6B6B6B] text-xs">540 FCFA / pièce</div>
+                      <div className="text-[#6B6B6B] text-xs">23 000 FCFA / pièce</div>
                     </div>
                     <button
                       onClick={() => removeItem(item.slug)}

@@ -25,8 +25,8 @@
   },
   "collection": {
     "title": "Tann sa cure",
-    "ritual_cta": "Programme bu mat — 3 boîtes · 1 400 FCFA",
-    "from_price": "Ci 540 FCFA"
+    "ritual_cta": "Programme bu mat — 3 boîtes · 56 800 FCFA",
+    "from_price": "Ci 23 000 FCFA"
   },
   "product": {
     "reviews": "xam-xam",
@@ -54,8 +54,8 @@
     "trust_cod": "Fay ci jënd bi rekk",
     "trust_delivery": "92% yónnee",
     "trust_stock": "Stock yomb — déglu tey",
-    "tier_hint_1_to_2": "Yokk 1 boîte bu dëkk → 950 FCFA rekk",
-    "tier_hint_2_to_3": "Yokk 1 boîte bu dëkk → 1 400 FCFA rekk",
+    "tier_hint_1_to_2": "Yokk 1 boîte bu dëkk → 43 000 FCFA rekk",
+    "tier_hint_2_to_3": "Yokk 1 boîte bu dëkk → 56 800 FCFA rekk",
     "cross_sells_title": "Yokk ci sa ritual",
     "add_cross_sell": "Yokk",
     "remove": "Dór",
@@ -86,8 +86,8 @@
   "upsell": {
     "title": "Offre — dëkk ci it",
     "hook": "Jëfandikoo offre bi ñaar",
-    "price": "540 FCFA",
-    "accept_cta": "Waaw, yokk 540 FCFA",
+    "price": "23 000 FCFA",
+    "accept_cta": "Waaw, yokk 23 000 FCFA",
     "decline": "Déedéet",
     "timer_label": "Offre bi séy ci"
   },

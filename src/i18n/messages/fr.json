@@ -25,8 +25,8 @@
   },
   "collection": {
     "title": "Choisissez votre cure",
-    "ritual_cta": "Programme Complet — 3 boîtes · 1 400 FCFA",
-    "from_price": "À partir de 540 FCFA"
+    "ritual_cta": "Programme Complet — 3 boîtes · 56 800 FCFA",
+    "from_price": "À partir de 23 000 FCFA"
   },
   "product": {
     "reviews": "avis",
@@ -54,8 +54,8 @@
     "trust_cod": "Payez uniquement à la réception",
     "trust_delivery": "92% commandes livrées",
     "trust_stock": "Stock limité — expédition aujourd'hui",
-    "tier_hint_1_to_2": "Ajoutez 1 boîte de plus → 950 FCFA seulement",
-    "tier_hint_2_to_3": "Ajoutez 1 boîte de plus → 1 400 FCFA seulement",
+    "tier_hint_1_to_2": "Ajoutez 1 boîte de plus → 43 000 FCFA seulement",
+    "tier_hint_2_to_3": "Ajoutez 1 boîte de plus → 56 800 FCFA seulement",
     "cross_sells_title": "Complétez votre rituel",
     "add_cross_sell": "Ajouter",
     "remove": "Retirer",
@@ -86,8 +86,8 @@
   "upsell": {
     "title": "Offre exclusive — une seule fois",
     "hook": "Profitez de cette offre avant de finaliser",
-    "price": "540 FCFA",
-    "accept_cta": "Oui, ajouter pour 540 FCFA",
+    "price": "23 000 FCFA",
+    "accept_cta": "Oui, ajouter pour 23 000 FCFA",
     "decline": "Non merci",
     "timer_label": "Offre expire dans"
   },

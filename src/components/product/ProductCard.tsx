@@ -63,7 +63,7 @@ export default function ProductCard({ product, locale, hideOffer = false }: Prop
 
         {!hideOffer && (
           <div className="flex items-center gap-2 mb-4 mt-auto pt-4">
-            <span className="text-[#C4652E] font-bold text-lg">{formatFCFA(540)}</span>
+            <span className="text-[#C4652E] font-bold text-lg">{formatFCFA(23000)}</span>
             <span className="text-[#6B6B6B] text-xs">/ pièce</span>
             <span className="bg-[#E8B84A] text-[#1A1A1A] text-[10px] font-bold px-2 py-0.5 rounded-full ml-auto">
               ⭐ Populaire

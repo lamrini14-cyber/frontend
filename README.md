@@ -57,7 +57,7 @@ NEXT_PUBLIC_SNAP_PIXEL_ID=<your id>
 ## Test order flow
 
 1. Go to `/fr/products/nuit-calm`
-2. Select offer (default = 2 pièces / 950 FCFA)
+2. Select offer (default = 2 pièces / 43 000 FCFA)
 3. Click "Ajouter et voir panier" → cart drawer opens
 4. Click "Commander · Paiement à la livraison"
 5. Fill name + phone `0550000000` (whitelist) + accept terms

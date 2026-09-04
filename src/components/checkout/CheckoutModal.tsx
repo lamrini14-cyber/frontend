@@ -61,7 +61,7 @@ export default function CheckoutModal({ open, onClose, onSuccess, locale }: Prop
 
     const phone = normalizePhone(data.phone);
     const trackingSlugs = upsellAccepted && upsellSlug ? [...slugs, upsellSlug] : slugs;
-    const finalTotal = tierTotal() + (upsellAccepted ? 540 : 0);
+    const finalTotal = tierTotal() + (upsellAccepted ? 23000 : 0);
 
     try {
       const orderItems = items.map((i) => ({ slug: i.slug, quantity: i.quantity }));
@@ -137,7 +137,7 @@ export default function CheckoutModal({ open, onClose, onSuccess, locale }: Prop
               {items.map((item) => (
                 <div key={item.slug} className="flex justify-between text-sm py-1">
                   <span>{item.name}</span>
-                  <span className="text-[#6B6B6B]">540 FCFA</span>
+                  <span className="text-[#6B6B6B]">{formatFCFA(23000)}</span>
                 </div>
               ))}
               <div className="border-t border-[#E8E0D8] mt-2 pt-2 flex justify-between font-bold">

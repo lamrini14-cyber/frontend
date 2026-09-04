@@ -1,11 +1,11 @@
 export const TIER_PRICES: Record<number, number> = {
-  1: 540,
-  2: 950,
-  3: 1400,
+  1: 23000,
+  2: 43000,
+  3: 56800,
 };
 
-export const UNIT_DISPLAY_FCFA = 540;
-export const UPSELL_PRICE = 540;
+export const UNIT_DISPLAY_FCFA = 23000;
+export const UPSELL_PRICE = 23000;
 
 export function computeTierTotal(uniqueSkuCount: number): number {
   return TIER_PRICES[uniqueSkuCount] ?? 0;

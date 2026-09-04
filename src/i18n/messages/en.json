@@ -25,8 +25,8 @@
   },
   "collection": {
     "title": "Choose your cure",
-    "ritual_cta": "Full Program — 3 boxes · 1,400 FCFA",
-    "from_price": "From 540 FCFA"
+    "ritual_cta": "Full Program — 3 boxes · 56,800 FCFA",
+    "from_price": "From 23,000 FCFA"
   },
   "product": {
     "reviews": "reviews",
@@ -54,8 +54,8 @@
     "trust_cod": "Pay only on receipt",
     "trust_delivery": "92% orders delivered",
     "trust_stock": "Limited stock — shipping today",
-    "tier_hint_1_to_2": "Add 1 more box → only 950 FCFA",
-    "tier_hint_2_to_3": "Add 1 more box → only 1,400 FCFA",
+    "tier_hint_1_to_2": "Add 1 more box → only 43,000 FCFA",
+    "tier_hint_2_to_3": "Add 1 more box → only 56,800 FCFA",
     "cross_sells_title": "Complete your ritual",
     "add_cross_sell": "Add",
     "remove": "Remove",
@@ -86,8 +86,8 @@
   "upsell": {
     "title": "Exclusive offer — one time only",
     "hook": "Take advantage of this offer before finalizing",
-    "price": "540 FCFA",
-    "accept_cta": "Yes, add for 540 FCFA",
+    "price": "23,000 FCFA",
+    "accept_cta": "Yes, add for 23,000 FCFA",
     "decline": "No thanks",
     "timer_label": "Offer expires in"
   },

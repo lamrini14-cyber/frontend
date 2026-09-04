@@ -23,7 +23,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     },
     {
       q: "Puis-je commander plusieurs produits ?",
-      a: "Oui ! Commandez 2 produits pour 950 FCFA ou les 3 pour 1 400 FCFA. Notre rituel complet offre les meilleurs résultats."
+      a: "Oui ! Commandez 2 produits pour 43 000 FCFA ou les 3 pour 56 800 FCFA. Notre rituel complet offre les meilleurs résultats."
     },
     {
       q: "Y a-t-il des effets secondaires ?",
@@ -143,8 +143,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </h2>
           <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto">
             {[
-              { count: 1, price: 540, label: "1 pièce", badge: "" },
-              { count: 2, price: 950, label: "2 pièces", badge: "⭐ Populaire" },
+              { count: 1, price: 23000, label: "1 pièce", badge: "" },
+              { count: 2, price: 43000, label: "2 pièces", badge: "⭐ Populaire" },
               { count: 3, price: 1400, label: "3 pièces", badge: "Rituel" },
             ].map(({ count, price, label, badge }) => (
               <div key={count} className="bg-white/10 rounded-2xl p-4 text-center hover:bg-white/20 transition-colors">
