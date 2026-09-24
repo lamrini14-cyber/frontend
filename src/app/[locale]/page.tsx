@@ -145,7 +145,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {[
               { count: 1, price: 23000, label: "1 pièce", badge: "" },
               { count: 2, price: 43000, label: "2 pièces", badge: "⭐ Populaire" },
-              { count: 3, price: 1400, label: "3 pièces", badge: "Rituel" },
+              { count: 3, price: 56800, label: "3 pièces", badge: "Rituel" },
             ].map(({ count, price, label, badge }) => (
               <div key={count} className="bg-white/10 rounded-2xl p-4 text-center hover:bg-white/20 transition-colors">
                 {badge && <div className="text-[#E8B84A] text-[10px] font-bold uppercase mb-1">{badge}</div>}
