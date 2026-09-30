@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 
 export default function CartDrawer({ locale }: { locale: string }) {
   const t = useTranslations("cart");
-  const { items, isDrawerOpen, closeDrawer, removeItem, addItem, uniqueCount, tierTotal, uniqueSlugs } = useCartStore();
+  const { items, isDrawerOpen, closeDrawer, removeItem, addItem, updateQuantity, totalCount, tierTotal, uniqueSlugs } = useCartStore();
   const [checkoutOpen, setCheckoutOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -20,7 +20,7 @@ export default function CartDrawer({ locale }: { locale: string }) {
   }, []);
 
   // Use 0/empty values during SSR/hydration to match server render perfectly
-  const count = mounted ? uniqueCount() : 0;
+  const count = mounted ? totalCount() : 0;
   const total = mounted ? tierTotal() : 0;
   const slugs = mounted ? uniqueSlugs() : [];
   const saved = mounted ? savedAmount(count) : 0;
@@ -72,13 +72,27 @@ export default function CartDrawer({ locale }: { locale: string }) {
                       <div className="font-semibold text-sm truncate">{item.name}</div>
                       <div className="text-[#6B6B6B] text-xs">23 000 FCFA / pièce</div>
                     </div>
-                    <button
-                      onClick={() => removeItem(item.slug)}
-                      className="p-2 rounded-lg hover:bg-red-50 text-[#6B6B6B] hover:text-[#C1121F] transition-colors"
-                      aria-label={`Retirer ${item.name}`}
-                    >
-                      <Trash2 size={16} />
-                    </button>
+                    <div className="flex items-center gap-2">
+                      <select
+                        value={item.quantity}
+                        onChange={(e) => updateQuantity(item.slug, parseInt(e.target.value, 10))}
+                        className="bg-[#F5F1ED] border border-[#E8E0D8] rounded-lg px-2 py-1 text-sm font-medium focus:ring-2 focus:ring-[#C4652E] outline-none cursor-pointer"
+                        aria-label={`Quantité pour ${item.name}`}
+                      >
+                        {[...Array(10)].map((_, i) => (
+                          <option key={i + 1} value={i + 1}>
+                            {i + 1}
+                          </option>
+                        ))}
+                      </select>
+                      <button
+                        onClick={() => removeItem(item.slug)}
+                        className="p-2 rounded-lg hover:bg-red-50 text-[#6B6B6B] hover:text-[#C1121F] transition-colors"
+                        aria-label={`Retirer ${item.name}`}
+                      >
+                        <Trash2 size={16} />
+                      </button>
+                    </div>
                   </div>
                 );
               })}
@@ -113,13 +127,37 @@ export default function CartDrawer({ locale }: { locale: string }) {
                           <div className="font-semibold text-sm truncate">{p.name}</div>
                           <div className="text-[#6B6B6B] text-xs">{p.woSubtitle}</div>
                         </div>
-                        <button
-                          onClick={() => addItem(p)}
-                          className="flex items-center gap-1 bg-[#C4652E] text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-[#a3521f] transition-colors min-h-[36px]"
-                        >
-                          <Plus size={14} />
-                          {t("add_cross_sell")}
-                        </button>
+                        <div className="flex items-center gap-2">
+                          <select
+                            onChange={(e) => {
+                              const qty = parseInt(e.target.value, 10);
+                              if (qty > 0) {
+                                addItem(p, qty);
+                                e.target.value = "1"; // Reset after adding
+                              }
+                            }}
+                            defaultValue="1"
+                            className="bg-[#F5F1ED] border border-[#E8E0D8] rounded-lg px-2 py-1 text-sm font-medium focus:ring-2 focus:ring-[#C4652E] outline-none cursor-pointer"
+                            aria-label={`Ajouter quantité pour ${p.name}`}
+                          >
+                            {[...Array(10)].map((_, i) => (
+                              <option key={i + 1} value={i + 1}>
+                                {i + 1}
+                              </option>
+                            ))}
+                          </select>
+                          <button
+                            onClick={(e) => {
+                              const select = e.currentTarget.previousElementSibling as HTMLSelectElement;
+                              addItem(p, parseInt(select.value, 10));
+                              select.value = "1";
+                            }}
+                            className="flex items-center gap-1 bg-[#C4652E] text-white text-xs font-semibold px-3 py-2 rounded-xl hover:bg-[#a3521f] transition-colors min-h-[36px]"
+                          >
+                            <Plus size={14} />
+                            {t("add_cross_sell")}
+                          </button>
+                        </div>
                       </div>
                     ))}
                   </div>

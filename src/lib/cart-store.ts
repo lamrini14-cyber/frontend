@@ -16,6 +16,7 @@ interface CartState {
   isDrawerOpen: boolean;
   addItem: (product: Product, quantity?: number) => void;
   removeItem: (slug: string) => void;
+  updateQuantity: (slug: string, quantity: number) => void;
   clearCart: () => void;
   openDrawer: () => void;
   closeDrawer: () => void;
@@ -23,6 +24,7 @@ interface CartState {
   tierTotal: () => number;
   totalWithUpsell: (upsellAccepted: boolean) => number;
   uniqueCount: () => number;
+  totalCount: () => number;
 }
 
 export const useCartStore = create<CartState>()(
@@ -35,7 +37,12 @@ export const useCartStore = create<CartState>()(
         set((state) => {
           const existing = state.items.find((i) => i.slug === product.slug);
           if (existing) {
-            return state;
+            return {
+              items: state.items.map((i) =>
+                i.slug === product.slug ? { ...i, quantity: Math.min(10, i.quantity + quantity) } : i
+              ),
+              isDrawerOpen: true,
+            };
           }
           return {
             items: [...state.items, { slug: product.slug, name: product.name, quantity }],
@@ -47,6 +54,12 @@ export const useCartStore = create<CartState>()(
       removeItem: (slug) => {
         set((state) => ({
           items: state.items.filter((i) => i.slug !== slug),
+        }));
+      },
+
+      updateQuantity: (slug, quantity) => {
+        set((state) => ({
+          items: state.items.map((i) => (i.slug === slug ? { ...i, quantity } : i)),
         }));
       },
 
@@ -65,8 +78,13 @@ export const useCartStore = create<CartState>()(
         return new Set(items.map((i) => i.slug)).size;
       },
 
+      totalCount: () => {
+        const { items } = get();
+        return items.reduce((sum, item) => sum + item.quantity, 0);
+      },
+
       tierTotal: () => {
-        const count = get().uniqueCount();
+        const count = get().totalCount();
         return computeTierTotal(count);
       },
 

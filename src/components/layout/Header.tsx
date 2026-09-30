@@ -14,7 +14,7 @@ export default function Header({ locale }: { locale: string }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const { uniqueCount, openDrawer } = useCartStore();
+  const { totalCount, openDrawer } = useCartStore();
   const langRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function Header({ locale }: { locale: string }) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const count = mounted ? uniqueCount() : 0;
+  const count = mounted ? totalCount() : 0;
 
   function switchLocalePath(newLocale: string) {
     const segments = pathname.split("/");

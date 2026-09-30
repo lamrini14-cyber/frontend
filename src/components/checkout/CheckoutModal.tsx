@@ -35,7 +35,7 @@ type FormValues = z.infer<typeof schema>;
 export default function CheckoutModal({ open, onClose, onSuccess, locale }: Props) {
   const t = useTranslations("checkout");
   const router = useRouter();
-  const { items, uniqueSlugs, tierTotal, clearCart } = useCartStore();
+  const { items, uniqueSlugs, tierTotal, clearCart, totalCount, updateQuantity } = useCartStore();
   const [upsellOpen, setUpsellOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [apiError, setApiError] = useState<string | null>(null);
@@ -43,8 +43,9 @@ export default function CheckoutModal({ open, onClose, onSuccess, locale }: Prop
   const [eventId] = useState(() => uuidv4());
 
   const slugs = uniqueSlugs();
-  const count = slugs.length;
+  const count = totalCount();
   const total = tierTotal();
+  const saved = count > 1 ? (23000 * count) - total : 0;
   const upsellProduct = getUpsellProduct(slugs);
 
   const {
@@ -135,11 +136,30 @@ export default function CheckoutModal({ open, onClose, onSuccess, locale }: Prop
             <div className="bg-white rounded-2xl p-4 shadow-sm">
               <h3 className="font-semibold text-sm mb-3 text-[#6B6B6B] uppercase tracking-wide">{t("order_summary")}</h3>
               {items.map((item) => (
-                <div key={item.slug} className="flex justify-between text-sm py-1">
-                  <span>{item.name}</span>
-                  <span className="text-[#6B6B6B]">{formatFCFA(23000)}</span>
+                <div key={item.slug} className="flex items-center justify-between text-sm py-1">
+                  <div className="flex items-center gap-2">
+                    <select
+                      value={item.quantity}
+                      onChange={(e) => updateQuantity(item.slug, parseInt(e.target.value, 10))}
+                      className="bg-[#F5F1ED] border border-[#E8E0D8] rounded px-1.5 py-0.5 text-xs font-medium focus:ring-1 focus:ring-[#C4652E] outline-none cursor-pointer"
+                    >
+                      {[...Array(10)].map((_, i) => (
+                        <option key={i + 1} value={i + 1}>
+                          {i + 1}
+                        </option>
+                      ))}
+                    </select>
+                    <span>{item.name}</span>
+                  </div>
+                  <span className="text-[#6B6B6B]">{formatFCFA(23000 * item.quantity)}</span>
                 </div>
               ))}
+              {saved > 0 && (
+                <div className="flex justify-between text-sm py-1 text-[#2D6A4F] font-medium">
+                  <span>Réduction</span>
+                  <span>-{formatFCFA(saved)}</span>
+                </div>
+              )}
               <div className="border-t border-[#E8E0D8] mt-2 pt-2 flex justify-between font-bold">
                 <span>Total</span>
                 <span className="text-[#C4652E]">{formatFCFA(total)}</span>
