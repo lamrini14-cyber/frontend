@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Shield } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Footer({ locale }: { locale: string }) {
@@ -28,13 +28,13 @@ export default function Footer({ locale }: { locale: string }) {
   };
 
   return (
-    <footer className="bg-[#1A1A1A] text-white mt-20">
+    <footer className="bg-[#0A1A1A] text-white mt-20">
       <div className="max-w-[1200px] mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
         <div className="mb-6 md:mb-0">
           <div className="flex items-center gap-3 mb-4">
             <div
               className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
-              style={{ backgroundColor: "#C4652E" }}
+              style={{ backgroundColor: "#0D6E6E" }}
             >
               SY
             </div>
@@ -42,12 +42,16 @@ export default function Footer({ locale }: { locale: string }) {
               <div className="font-bold tracking-widest text-sm uppercase" style={{ fontFamily: "DM Serif Display, Georgia, serif" }}>
                 SUNU YARAMA
               </div>
-              <div className="text-gray-400 text-[11px] lowercase">our body</div>
+              <div className="text-gray-500 text-[11px] tracking-widest uppercase">La pharmacie naturelle du Sénégal</div>
             </div>
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Le premier rituel gummy honnête pour le Sénégal. Trois problèmes. Trois solutions. Une confiance.
+            Compléments alimentaires de qualité pharmaceutique. Formulations cliniques, dosages transparents, certifié GMP.
           </p>
+          <div className="flex items-center gap-2 mt-4 text-xs text-gray-500">
+            <Shield size={12} className="text-[#D4A843]" />
+            <span>GMP · COA · Dosages cliniques</span>
+          </div>
         </div>
 
         <div className="border-t border-gray-800 md:border-t-0 md:pt-0">
@@ -56,7 +60,7 @@ export default function Footer({ locale }: { locale: string }) {
             onClick={() => toggleSection('boutique')}
             aria-expanded={openSection === 'boutique'}
           >
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-[#E8B84A]">Boutique</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-[#D4A843]">Protocoles</h3>
             <ChevronDown size={16} className={cn("text-gray-400 md:hidden transition-transform", openSection === 'boutique' && "rotate-180")} />
           </button>
           <ul className={cn(
@@ -79,7 +83,7 @@ export default function Footer({ locale }: { locale: string }) {
             onClick={() => toggleSection('legal')}
             aria-expanded={openSection === 'legal'}
           >
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-[#E8B84A]">Légal</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-[#D4A843]">Légal</h3>
             <ChevronDown size={16} className={cn("text-gray-400 md:hidden transition-transform", openSection === 'legal' && "rotate-180")} />
           </button>
           <ul className={cn(
@@ -102,16 +106,17 @@ export default function Footer({ locale }: { locale: string }) {
             onClick={() => toggleSection('confiance')}
             aria-expanded={openSection === 'confiance'}
           >
-            <h3 className="font-semibold text-sm uppercase tracking-wider text-[#E8B84A]">Confiance</h3>
+            <h3 className="font-semibold text-sm uppercase tracking-wider text-[#D4A843]">Qualité</h3>
             <ChevronDown size={16} className={cn("text-gray-400 md:hidden transition-transform", openSection === 'confiance' && "rotate-180")} />
           </button>
           <ul className={cn(
             "space-y-3 pb-4 md:pb-0 overflow-hidden transition-all duration-300 md:!h-auto md:!opacity-100 text-sm text-gray-400",
             openSection === 'confiance' ? "h-auto opacity-100" : "h-0 opacity-0 md:opacity-100"
           )}>
+            <li>✓ Certifié GMP international</li>
+            <li>✓ COA — Certificat d&apos;analyse</li>
             <li>✓ Paiement à la livraison</li>
-            <li>✓ Certifié GMP</li>
-            <li>✓ Livraison Dakar 48h</li>
+            <li>✓ Livraison Dakar 24–48h</li>
             <li className="mt-4 pt-4 border-t border-gray-800 md:border-t-0 md:pt-0 md:mt-3">
               <a href="mailto:contact@sunuyaram.shop" className="hover:text-white transition-colors">
                 contact@sunuyaram.shop
@@ -122,8 +127,8 @@ export default function Footer({ locale }: { locale: string }) {
       </div>
 
       <div className="border-t border-gray-800">
-        <div className="max-w-[1200px] mx-auto px-4 py-4 text-center text-gray-500 text-xs">
-          © 2026 SUNU YARAMA · sunuyaram.shop
+        <div className="max-w-[1200px] mx-auto px-4 py-4 text-center text-gray-600 text-xs">
+          © 2026 SUNU YARAMA · La pharmacie naturelle du Sénégal · sunuyaram.shop
         </div>
       </div>
     </footer>

@@ -46,9 +46,9 @@ export default function Header({ locale }: { locale: string }) {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#FFFBF7] border-b border-[#E8E0D8] shadow-sm">
-      <div className="md:hidden bg-[#1B4332] text-white text-xs text-center py-1.5 tracking-wide">
-        COD · Livraison 48h Dakar · ★ 4.9/5
+    <header className="sticky top-0 z-50 bg-[#F9F6F1] border-b border-[#E8E0D8] shadow-sm">
+      <div className="md:hidden bg-[#0D6E6E] text-white text-xs text-center py-1.5 tracking-wide">
+        GMP Certifié · COD · Livraison 48h Dakar
       </div>
 
       <div className="max-w-[1200px] mx-auto px-4 h-16 flex items-center justify-between relative">
@@ -57,7 +57,7 @@ export default function Header({ locale }: { locale: string }) {
             <div className="absolute inset-0 rounded-full bg-[#38b000]/20 animate-pulse shadow-[0_0_20px_rgba(56,176,0,0.5)]" />
             <div
               className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0 relative z-10"
-              style={{ backgroundColor: "#C4652E", fontFamily: "DM Serif Display, Georgia, serif" }}
+              style={{ backgroundColor: "#0D6E6E", fontFamily: "DM Serif Display, Georgia, serif" }}
             >
               SY
             </div>
@@ -69,7 +69,7 @@ export default function Header({ locale }: { locale: string }) {
             >
               SUNU YARAMA
             </div>
-            <div className="text-[#6B6B6B] text-[11px] lowercase tracking-normal">our body</div>
+            <div className="text-[#6B7280] text-[10px] tracking-widest uppercase">Pharmacie naturelle</div>
           </div>
         </Link>
 

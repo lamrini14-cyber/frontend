@@ -48,7 +48,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${dmSans.variable} ${dmSerifDisplay.variable}`}>
-      <body className="font-sans bg-[#FFFBF7] text-[#1A1A1A]">
+      <body className="font-sans bg-[#F9F6F1] text-[#1A1A1A]">
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           <main>{children}</main>

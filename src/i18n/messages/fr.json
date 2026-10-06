@@ -10,22 +10,22 @@
     "stars": "★ 4.9/5"
   },
   "home": {
-    "hero_headline": "Votre corps mérite un rituel honnête.",
-    "hero_subhead": "Trois cures. Trois problèmes résolus. Paiement à la livraison.",
-    "hero_cta": "Découvrir la collection",
-    "problems_title": "Reconnaissez-vous ces moments ?",
-    "offer_banner_title": "Une cure efficace. Un prix honnête.",
+    "hero_headline": "La pharmacie naturelle du Sénégal.",
+    "hero_subhead": "Compléments alimentaires de qualité pharmaceutique. Dosages cliniques, ingrédients certifiés GMP. Paiement à la livraison.",
+    "hero_cta": "Découvrir nos protocoles",
+    "problems_title": "Trois symptômes. Trois protocoles.",
+    "offer_banner_title": "Un protocole efficace. Un prix transparent.",
     "how_title": "Comment ça marche",
-    "how_1": "Choisissez votre cure",
+    "how_1": "Choisissez votre protocole",
     "how_2": "Commandez en COD",
-    "how_3": "Profitez du rituel",
-    "testimonials_title": "Ce que disent nos clients Dakar",
+    "how_3": "Suivez votre cure 30 jours",
+    "testimonials_title": "Ce que disent nos clients à Dakar",
     "faq_title": "Questions fréquentes",
     "final_cta": "Commander maintenant"
   },
   "collection": {
-    "title": "Choisissez votre cure",
-    "ritual_cta": "Programme Complet — 3 boîtes · 56 800 FCFA",
+    "title": "Choisissez votre protocole",
+    "ritual_cta": "Protocole Complet — 3 formulations · 56 800 FCFA",
     "from_price": "À partir de 23 000 FCFA"
   },
   "product": {
@@ -105,14 +105,14 @@
     "total_paid": "Total à payer à la livraison"
   },
   "about": {
-    "hero": "SUNU YARAMA — our body",
-    "story_title": "Notre histoire",
-    "story": "Nous avons créé SUNU YARAMA parce que le Sénégal méritait une marque de gummies honnête — pas une crème miracle, pas un complément importé sans transparence.",
-    "mission_title": "Notre mission",
-    "mission": "Trois problèmes quotidiens. Trois solutions scientifiques. Un rituel accessible.",
-    "quality_title": "Qualité",
-    "quality": "Ingrédients GMP certifiés, doses efficaces, zéro fillers inutiles.",
-    "cta": "Découvrir la collection"
+    "hero": "La pharmacie naturelle du Sénégal",
+    "story_title": "Pourquoi SUNU YARAMA existe",
+    "story": "Le Sénégal méritait une marque de compléments alimentaires avec des standards pharmaceutiques — pas une crème miracle, pas un produit importé sans transparence. SUNU YARAMA, c'est la rigueur d'un laboratoire avec la proximité de votre pharmacien de quartier.",
+    "mission_title": "Trois protocoles. Zéro compromis.",
+    "mission": "Sommeil, énergie, digestion — trois problèmes quotidiens ciblés avec des actifs dosés cliniquement : KSM-66® pour le sommeil, D3+B12 pour l'énergie, probiotiques pour la digestion.",
+    "quality_title": "La qualité que votre corps mérite",
+    "quality": "Production GMP certifiée, ingrédients traçables, certificats d'analyse par lot, dosages conformes aux études cliniques. Pas de fillers, pas de sous-dosage.",
+    "cta": "Découvrir nos protocoles"
   },
   "contact": {
     "title": "Contact",
